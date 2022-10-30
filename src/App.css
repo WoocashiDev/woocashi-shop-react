@@ -635,7 +635,7 @@
   .categorypage-item {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     padding: 16px;
     transition: linear 0.1s;
