@@ -9,6 +9,10 @@
 
 .App {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /*layout*/
@@ -26,6 +30,14 @@
   transform: translate(-50%, 0);
 }
 
+@media (max-width: 768px) {
+  .container,
+.container-fixed {
+    width: 90vw;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
 @media (min-width: 768px) {
   .container,
 .container-fixed {
@@ -150,7 +162,52 @@
   height: 76px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
+  .productpage {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .productpage-slider {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .productpage-slider-image-main {
+    width: 21.5rem;
+    display: flex;
+    align-items: stretch;
+  }
+  .productpage-slider-image-main > img {
+    width: 21.5rem;
+    height: auto;
+  }
+  .productpage-slider-images-min {
+    flex-direction: row;
+    justify-self: flex-start;
+    gap: 20px;
+    min-height: 80px;
+    overflow: scroll;
+    align-items: stretch;
+    width: 21.5rem;
+  }
+  .productpage-slider-image-min {
+    cursor: pointer;
+    display: flex;
+    justify-content: stretch;
+    border: 1px transparent solid;
+    position: relative;
+    min-width: 79.5px;
+    min-height: 80px;
+    transition: 0.1s linear;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media (min-width: 768px) {
   .productpage {
     flex-direction: column;
     justify-content: center;
@@ -221,7 +278,7 @@
     background: rgb(88, 175, 111);
   }
 }
-@media (max-width: 991px) and (min-width: 992px) {
+@media (min-width: 992px) {
   .productpage {
     flex-direction: column;
     justify-content: center;
@@ -259,9 +316,10 @@
     gap: 20px;
     overflow: scroll;
     justify-content: stretch;
+    width: auto;
   }
 }
-@media (max-width: 991px) and (min-width: 1280px) {
+@media (min-width: 1280px) {
   .productpage {
     flex-direction: row;
     justify-content: flex-start;
@@ -311,7 +369,6 @@
   background-color: white;
   display: flex;
   height: 80px;
-  width: 100%;
   align-items: center;
   justify-content: space-between;
 }
@@ -1200,6 +1257,11 @@
   filter: invert(1);
 }
 
+@media (max-width: 768px) {
+  .cart-dropdown-container {
+    max-height: 80vh;
+  }
+}
 .currency-dropdown {
   position: absolute;
   top: 80px;

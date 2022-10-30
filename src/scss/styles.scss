@@ -36,6 +36,10 @@ $primary-color-darkened: rgb(88, 175, 111);
 
  .App {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
  }
 
  /*layout*/
@@ -52,6 +56,14 @@ $primary-color-darkened: rgb(88, 175, 111);
       position: fixed;
       left: 50%;
       transform: translate(-50%, 0);
+    }
+  }
+  @media (max-width: 768px) {
+    .container,
+    .container-fixed {
+      width: 90vw;
+      padding-right: 0px;
+      padding-left: 0px;
     }
   }
   @media (min-width: 768px) {
