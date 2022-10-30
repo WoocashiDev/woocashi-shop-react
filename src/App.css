@@ -631,7 +631,25 @@
   opacity: 100%;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 768px) {
+  .categorypage-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 16px;
+    transition: linear 0.1s;
+    width: 340px;
+  }
+  .categorypage-item--image {
+    width: 340px;
+    height: 320px;
+  }
+  .categorypage-item--soldout {
+    width: 340px;
+  }
+}
+@media (min-width: 768px) {
   .categorypage-items {
     margin-top: 80px;
     margin-bottom: 80px;
