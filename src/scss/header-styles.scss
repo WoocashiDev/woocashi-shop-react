@@ -142,4 +142,16 @@
   
     }
   }
+
+  .header-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 14px;
+    
+    max-width: 204px;
+    height: 60px;
+  }
 }

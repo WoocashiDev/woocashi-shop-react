@@ -38,6 +38,7 @@
   }
   .container-fixed {
     width: 100vw;
+    background-color: white;
     padding-right: 10px;
     padding-left: 10px;
   }
@@ -497,6 +498,16 @@
     display: flex;
     align-items: flex-start;
     height: 44px;
+  }
+  .header-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 14px;
+    max-width: 204px;
+    height: 60px;
   }
 }
 .categorypage {
