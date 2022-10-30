@@ -482,6 +482,23 @@
   font-weight: 600;
 }
 
+@media (max-width: 768px) {
+  .navlink-text {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    /* identical to box height, or 19px */
+    text-transform: uppercase;
+    transition: 0.1s linear;
+    border-bottom: 3px solid transparent;
+    padding: 0 13px;
+    display: flex;
+    align-items: flex-start;
+    height: 44px;
+  }
+}
 .categorypage {
   padding-top: 80px;
 }

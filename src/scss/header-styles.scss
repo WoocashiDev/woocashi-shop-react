@@ -123,3 +123,23 @@
     color: $primary-color;
     font-weight: 600;
 }
+
+@media (max-width: 768px) {
+  .navlink {
+    &-text {
+      @include primary-font;
+      font-size: 13px;
+      line-height: 20px;
+      /* identical to box height, or 19px */
+      
+      text-transform: uppercase;
+      transition: .1s linear;
+      border-bottom: 3px solid transparent;
+      padding: 0 13px;
+      display: flex;
+      align-items: flex-start;
+      height:44px;
+  
+    }
+  }
+}
