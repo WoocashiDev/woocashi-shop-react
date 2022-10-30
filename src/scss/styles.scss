@@ -36,10 +36,8 @@ $primary-color-darkened: rgb(88, 175, 111);
 
  .App {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin: 0 auto;
+  padding: 0 12px;
  }
 
  /*layout*/
@@ -63,12 +61,14 @@ $primary-color-darkened: rgb(88, 175, 111);
       width: 90vw;
       padding-right: 0px;
       padding-left: 0px;
+      margin: 0;
     }
     .container-fixed {
       width: 100vw;
       background-color: white;
       padding-right: 10px;
       padding-left: 10px;
+      margin: 0;
     }
   }
   @media (min-width: 768px) {
@@ -106,6 +106,8 @@ $primary-color-darkened: rgb(88, 175, 111);
 
 .bg-white {
   background: white;
+  margin: 0;
+  width: 100vw;
 }
 
 /*OVERLAY CONTAINERS FOR DROPDOWNS*/
