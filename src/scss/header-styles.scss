@@ -1,0 +1,126 @@
+/* HEADER LAYOUT COMPONENT */
+.header {
+    /* Header - Desktop */
+    background-color: white;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+    &-navigation {
+      padding-top: 4px;
+      height: 56px;
+
+      &--items {
+        display: flex;
+        align-items: center;
+      }
+
+      &--item {
+        display: flex;
+        align-items: flex-end;
+        height: 56px;
+
+        a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 30px;
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+  &-logo {
+    width: 41px;
+    height: 41px;
+  }
+  &-actions {
+    /* Actions */
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 22px;
+    
+    width: 204px;
+    height: 60px;
+
+    &-currency {
+      @include primary-font;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 28.8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+
+    &-cart {
+      position: relative;
+      cursor: pointer;
+
+      &-count {
+        @include secondary-font;
+        font-weight: 700;
+        font-size: 14px;
+        position: absolute;
+        right: -50%;
+        top: -50%;
+        width: 20px; 
+        height: 20px;
+
+        background: #1D1F22;
+        border-radius: 60px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+
+    &--container {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 0px 10px;
+        gap: 12px;
+      } 
+  }
+}
+
+.navlink {
+  &-text {
+    @include primary-font;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 19px */
+    
+    text-transform: uppercase;
+    transition: .1s linear;
+    border-bottom: 3px solid transparent;
+    padding: 0 16px;
+    display: flex;
+    align-items: flex-start;
+    height:50px;
+
+  }
+}
+ 
+
+.header-navigation--item .active,
+.header-navigation--item .navlink-text:hover{
+    border-bottom: 3px solid $primary-color;
+    color: $primary-color;
+    font-weight: 600;
+}
