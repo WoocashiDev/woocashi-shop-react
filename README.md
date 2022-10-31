@@ -1,3 +1,11 @@
+# Editing SCSS files
+
+to edit styles please make sure to import any scss file to styles.scss - this file will be watched after you run "npm run sass"
+
+# DATA Source
+
+this project fetches the data from Graphql Apollo server hosted on: https://woocashi-react-shop.herokuapp.com/ 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
